@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,7 +34,7 @@ body {
 }
 
 #card-inside .wrap {
-  background: #FFEFEF;
+  background: #dbeafe;
   -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
 }
@@ -63,15 +64,15 @@ body {
   font-family: 'Lobster', cursive;
   font-style: italic;
   font-size: 70px;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d;
-  color: #FFF;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2), 1px 1px 0 #ffd700, 2px 2px 0 #ffa500, 3px 3px 0 #e67e00;
+  color: #fff;
 }
 
 #card-inside {
   font-size: 1.3em;
   line-height: 1.4;
-font-family: 'Lobster';
-  color: #331717;
+  font-family: 'Lobster';
+  color: #1e3a5f;
   font-style: italic;
 }
 
@@ -84,17 +85,21 @@ p:first-child {
 }
 
 p.signed {
-  margin-top: 1em;
+  margin-top: 1.4em;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-  font-weight: bold;
-  font-size: 0.75em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #b5006e;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-shadow: 1px 1px 6px rgba(181, 0, 110, 0.18);
 }
 
 #card-front {
-  background-color: #ee9ca7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5555), to(#FF7777));
-  background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
+  background-color: #1e40af;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e3a8a), to(#3b82f6));
+  background-image: linear-gradient(top, #1e3a8a 0%, #3b82f6 100%);
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: -webkit-transform 1s linear;
@@ -131,7 +136,7 @@ p.signed {
   position: absolute;
   bottom: 1em;
   right: -12px;
-  background: #F44;
+  background: #1d4ed8;
   color: #FFF;
   font-family: 'Lobster', cursive;
   font-style: italic;
@@ -146,7 +151,7 @@ p.signed {
 
 #card-front button:hover,
 #card-front button:focus {
-  background: #F22;
+  background: #1e40af;
 }
 
 #close {
@@ -179,7 +184,7 @@ p.signed {
 
 #card.open-fully #card-front,
 #card.close-half #card-front {
-  background: #FFEFEF;
+  background: #dbeafe;
 }
 
 #card.open-fully #card-front {
@@ -229,8 +234,8 @@ font-family: 'Lobster', cursive;
           transform: translateY(-300px);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-animation: in 500ms 5s ease-out forwards;
-          animation: in 500ms 5s ease-out forwards;
+  -webkit-animation: in 500ms 0s ease-out forwards;
+          animation: in 500ms 0s ease-out forwards;
 }
 
 .velas:after,
@@ -265,28 +270,28 @@ font-family: 'Lobster', cursive;
 }
 
 .fuego:nth-child(1) {
-  -webkit-animation: fuego 2s 5.5s infinite;
-          animation: fuego 2s 5.5s infinite;
+  -webkit-animation: fuego 2s 0s infinite;
+          animation: fuego 2s 0s infinite;
 }
 
 .fuego:nth-child(2) {
-  -webkit-animation: fuego 1.5s 5.5s infinite;
-          animation: fuego 1.5s 5.5s infinite;
+  -webkit-animation: fuego 1.5s 0s infinite;
+          animation: fuego 1.5s 0s infinite;
 }
 
 .fuego:nth-child(3) {
-  -webkit-animation: fuego 1s 5.5s infinite;
-          animation: fuego 1s 5.5s infinite;
+  -webkit-animation: fuego 1s 0s infinite;
+          animation: fuego 1s 0s infinite;
 }
 
 .fuego:nth-child(4) {
-  -webkit-animation: fuego 0.5s 5.5s infinite;
-          animation: fuego 0.5s 5.5s infinite;
+  -webkit-animation: fuego 0.5s 0s infinite;
+          animation: fuego 0.5s 0s infinite;
 }
 
 .fuego:nth-child(5) {
-  -webkit-animation: fuego 0.2s 5.5s infinite;
-          animation: fuego 0.2s 5.5s infinite;
+  -webkit-animation: fuego 0.2s 0s infinite;
+          animation: fuego 0.2s 0s infinite;
 }
 
 /* ============================================== Animation Fire
@@ -359,7 +364,7 @@ font-family: 'Lobster', cursive;
           backface-visibility: hidden;
   -webkit-transform: translateZ(-1px) rotateY(180deg);
           transform: translateZ(-1px) rotateY(180deg);
-  background-color: #ffefef;
+  background-color: #dbeafe;
   overflow: hidden;
 }
 
