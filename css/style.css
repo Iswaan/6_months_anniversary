@@ -452,3 +452,76 @@ font-family: 'Lobster', cursive;
     opacity: 1;
   }
 }
+
+/* ============================================== Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  /* Make card fill the phone screen width */
+  #card {
+    width: 100vw;
+  }
+
+  /* Full viewport height for all card panels */
+  #card, #card-front, #card-inside {
+    height: 100svh;
+  }
+
+  /* Scale down the big H1 */
+  #card h1 {
+    font-size: 9vw;
+    margin-top: 0.2em;
+  }
+
+  /* Scale inner text */
+  #card-inside {
+    font-size: 3.5vw;
+    line-height: 1.6;
+  }
+
+  /* Tighter padding on mobile */
+  .wrap {
+    padding: 1em 1.2em;
+  }
+
+  /* Scale the whole cake+candle section down */
+  .cake_and_velas {
+    transform: scale(0.6);
+    transform-origin: center bottom;
+    bottom: 15%;
+  }
+
+  /* Polaroid container: full height, tighter gap */
+  .card-front_inside {
+    width: 98%;
+    height: 100%;
+  }
+
+  .polaroid-stack {
+    gap: 8px;
+    padding: 8px 6px 0;
+  }
+
+  /* Each photo fills half the height */
+  .polaroid {
+    width: 90%;
+    height: 160px;
+    border: 5px solid #f5f5f5;
+    border-bottom: 28px solid #f5f5f5;
+  }
+
+  /* Bigger signed text on mobile */
+  p.signed {
+    font-size: 5.5vw;
+    margin-top: 0.8em;
+  }
+
+  /* Make open/close buttons easier to tap */
+  #card-front button {
+    font-size: 1.2em;
+    padding: 0.7em 0.9em;
+    right: -10px;
+  }
+}
